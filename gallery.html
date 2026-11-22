@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery | BUDGET HOTEL - Visual Tour of Rooms & Spaces</title>
+  <meta name="description" content="Explore photos of BUDGET HOTEL: exterior, standard rooms, deluxe rooms, family rooms, reception, dining area, attached bathrooms, and lobby lounge.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Demo Notice Banner -->
+  <aside class="demo-notice-bar" aria-label="Demonstration Notice">
+    <span>Demonstration Notice:</span> All images in this gallery are displayed using approved placeholder containers for layout demonstration.
+  </aside>
+
+  <!-- Global Header & Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="BUDGET HOTEL Home">
+        <span class="brand-logo-text">BUDGET HOTEL</span>
+        <span class="brand-logo-sub">Affordable &amp; Comfortable</span>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="rooms.html" class="nav-link">Rooms</a>
+        <a href="facilities.html" class="nav-link">Facilities</a>
+        <a href="dining.html" class="nav-link">Dining</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="offers-booking.html" class="nav-link">Offers</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="offers-booking.html" class="btn btn-accent btn-sm">Book Your Stay</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Page Banner -->
+    <section class="page-banner" aria-label="Gallery Banner">
+      <div class="container">
+        <div class="banner-breadcrumb">
+          <a href="index.html">Home</a> &rsaquo; <span>Photo Gallery</span>
+        </div>
+        <h1 class="banner-title">HOTEL PHOTO GALLERY</h1>
+        <p class="banner-subtitle">
+          Take a visual tour through our hotel exterior, guest bedrooms, front desk, common lobby, and clean dining areas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section-padding bg-cream">
+      <div class="container">
+
+        <!-- Category Filters -->
+        <div class="filter-tabs">
+          <button class="filter-btn gallery-filter-btn active" data-category="all">All Photos</button>
+          <button class="filter-btn gallery-filter-btn" data-category="exterior">Exterior</button>
+          <button class="filter-btn gallery-filter-btn" data-category="rooms">Rooms</button>
+          <button class="filter-btn gallery-filter-btn" data-category="dining">Dining</button>
+          <button class="filter-btn gallery-filter-btn" data-category="common">Common Areas</button>
+        </div>
+
+        <!-- Gallery Grid (Strictly reusing approved 8 placeholders) -->
+        <div class="gallery-grid">
+
+          <!-- 1. budget-hotel-hero (Exterior) -->
+          <div class="gallery-item filterable-gallery-item" 
+               data-category="exterior" 
+               data-title="Hotel Exterior & Entrance"
+               data-caption="Welcoming exterior facade of BUDGET HOTEL featuring clean architecture, clear signage, and approachable entrance."
+               data-placeholder-class="budget-hotel-hero">
+            <div class="image-placeholder budget-hotel-hero placeholder-16-9">
+              <div class="placeholder-content">
+                <span class="placeholder-icon">🏨</span>
+                <span class="placeholder-title">Hotel Exterior</span>
+                <span class="placeholder-sub">Modern Welcoming Facade</span>
+              </div>
+            </div>
+            <div class="gallery-overlay-btn">
+              <span style="font-size: 1.5rem;">🔍</span>
+              <span class="view-text">Click to Preview</span>
+            </div>
+          </div>
+
+          <!-- 2. budget-hotel-standard-room (Rooms) -->
+          <div class="gallery-item filterable-gallery-item" 
+               data-category="rooms" 
+               data-title="Standard Room"
+               data-caption="Clean and comfortable standard hotel room arranged with neat fresh linens, cozy lighting, and functional layout."
+               data-placeholder-class="budget-hotel-standard-room">
+            <div class="image-placeholder budget-hotel-standard-room placeholder-16-9">
+              <div class="placeholder-content">
+                <span class="placeholder-icon">🛏️</span>
+                <span class="placeholder-title">Standard Room</span>
+                <span class="placeholder-sub">Comfortable Restful Bedding</span>
+              </div>
+            </div>
+            <div class="gallery-overlay-btn">
+              <span style="font-size: 1.5rem;">🔍</span>
+              <span class="view-text">Click to Preview</span>
+            </div>
+          </div>
+
+          <!-- 3. budget-hotel-deluxe-room (Rooms) -->
+          <div class="gallery-item filterable-gallery-item" 
+               data-category="rooms" 
+               data-title="Deluxe Room"
+               data-caption="Spacious deluxe room featuring warm interior decor, split air conditioning, dedicated work table, and queen bed."
+               data-placeholder-class="budget-hotel-deluxe-room">
+            <div class="image-placeholder budget-hotel-deluxe-room placeholder-16-9">
+              <div class="placeholder-content">
+                <span class="placeholder-icon">✨</span>
+                <span class="placeholder-title">Deluxe Room</span>
+                <span class="placeholder-sub">Spacious AC Interior</span>
+              </div>
+            </div>
+            <div class="gallery-overlay-btn">
+              <span style="font-size: 1.5rem;">🔍</span>
+              <span class="view-text">Click to Preview</span>
+            </div>
+          </div>
+
+          <!-- 4. budget-hotel-family-room (Rooms) -->
+          <div class="gallery-item filterable-gallery-item" 
+               data-category="rooms" 
+               data-title="Family Room"
+               data-caption="Generously sized family room with multiple beds, plenty of luggage space, and air-conditioned family relaxation."
+               data-placeholder-class="budget-hotel-family-room">
+            <div class="image-placeholder budget-hotel-family-room placeholder-16-9">
+              <div class="placeholder-content">
+                <span class="placeholder-icon">👨‍👩‍👧‍👦</span>
+                <span class="placeholder-title">Family Room</span>
+                <span class="placeholder-sub">Spacious Multiple Beds</span>
+              </div>
+            </div>
+            <div class="gallery-overlay-btn">
+              <span style="font-size: 1.5rem;">🔍</span>
+              <span class="view-text">Click to Preview</span>
+            </div>
+          </div>
+
+          <!-- 5. budget-hotel-reception (Common Areas) -->
+          <div class="gallery-item filterable-gallery-item" 
+               data-category="common" 
+               data-title="Hotel Reception Area"
+               data-caption="Professional 24-hour reception desk where guests are greeted warmly and checked in promptly."
+               data-placeholder-class="budget-hotel-reception">
+            <div class="image-placeholder budget-hotel-reception placeholder-16-9">
+              <div class="placeholder-content">
+                <span class="placeholder-icon">🛎️</span>
+                <span class="placeholder-title">Reception Area</span>
+                <span class="placeholder-sub">24/7 Front Desk Counter</span>
+              </div>
+            </div>
+            <div class="gallery-overlay-btn">
+              <span style="font-size: 1.5rem;">🔍</span>
+              <span class="view-text">Click to Preview</span>
+            </div>
+          </div>
+
+          <!-- 6. budget-hotel-dining (Dining) -->
+          <div class="gallery-item filterable-gallery-item" 
+               data-category="dining" 
+               data-title="Hotel Dining Hall"
+               data-caption="Neat and well-lit dining space arranged with comfortable tables, offering breakfast, thali meals, and tea."
+               data-placeholder-class="budget-hotel-dining">
+            <div class="image-placeholder budget-hotel-dining placeholder-16-9">
+              <div class="placeholder-content">
+                <span class="placeholder-icon">🍽️</span>
+                <span class="placeholder-title">Dining Area</span>
+                <span class="placeholder-sub">Clean Tables &amp; Fresh Food</span>
+              </div>
+            </div>
+            <div class="gallery-overlay-btn">
+              <span style="font-size: 1.5rem;">🔍</span>
+              <span class="view-text">Click to Preview</span>
+            </div>
+          </div>
+
+          <!-- 7. budget-hotel-bathroom (Rooms / Interior) -->
+          <div class="gallery-item filterable-gallery-item" 
+               data-category="rooms" 
+               data-title="Clean Attached Bathroom"
+               data-caption="Modern attached bathroom with sanitary fittings, tiled shower, mirror, and reliable hot water supply."
+               data-placeholder-class="budget-hotel-bathroom">
+            <div class="image-placeholder budget-hotel-bathroom placeholder-16-9">
+              <div class="placeholder-content">
+                <span class="placeholder-icon">🚿</span>
+                <span class="placeholder-title">Modern Bathroom</span>
+                <span class="placeholder-sub">Hygienic Fixtures &amp; Hot Water</span>
+              </div>
+            </div>
+            <div class="gallery-overlay-btn">
+              <span style="font-size: 1.5rem;">🔍</span>
+              <span class="view-text">Click to Preview</span>
+            </div>
+          </div>
+
+          <!-- 8. budget-hotel-lobby (Common Areas) -->
+          <div class="gallery-item filterable-gallery-item" 
+               data-category="common" 
+               data-title="Hotel Lobby & Waiting Lounge"
+               data-caption="Comfortable guest seating area adjacent to the front desk, ideal for meeting visitors or awaiting transport."
+               data-placeholder-class="budget-hotel-lobby">
+            <div class="image-placeholder budget-hotel-lobby placeholder-16-9">
+              <div class="placeholder-content">
+                <span class="placeholder-icon">🛋️</span>
+                <span class="placeholder-title">Lobby Lounge</span>
+                <span class="placeholder-sub">Relaxing Guest Waiting Area</span>
+              </div>
+            </div>
+            <div class="gallery-overlay-btn">
+              <span style="font-size: 1.5rem;">🔍</span>
+              <span class="view-text">Click to Preview</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="cta-banner" style="margin-top: 4rem;">
+          <h2 class="cta-headline">LIKE WHAT YOU SEE?</h2>
+          <p class="cta-subtext">Book your budget-friendly stay today with clean rooms, reliable amenities, and welcoming hospitality.</p>
+          <a href="offers-booking.html" class="btn btn-accent" style="padding: 1rem 2.5rem; font-size: 1.05rem;">Book Your Stay</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox Modal Component (Pure Vanilla JS Interaction) -->
+  <div class="lightbox-modal" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Photo Preview Lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+      <div id="lightboxImgHolder" class="image-placeholder budget-hotel-hero placeholder-16-9">
+        <!-- Injected via Vanilla JS -->
+      </div>
+      <div class="lightbox-body">
+        <h3 class="lightbox-title" id="lightboxTitle">Image Title</h3>
+        <p class="lightbox-caption" id="lightboxCaption">Demonstration image description will appear here.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <span class="brand-logo-text" style="color:var(--white);">BUDGET HOTEL</span>
+            <span class="brand-logo-sub">Affordable &amp; Comfortable</span>
+          </div>
+          <p class="footer-desc">
+            BUDGET HOTEL provides clean, comfortable, and affordable accommodation for everyday travellers, family vacations, and business visits. Experience hospitality without the high price tag.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Social link Facebook">fb</a>
+            <a href="#" class="social-icon" aria-label="Social link Instagram">ig</a>
+            <a href="#" class="social-icon" aria-label="Social link Twitter">tw</a>
+            <a href="#" class="social-icon" aria-label="Social link LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About BUDGET HOTEL</a></li>
+            <li><a href="rooms.html">Rooms &amp; Rates</a></li>
+            <li><a href="facilities.html">Facilities &amp; Services</a></li>
+            <li><a href="dining.html">Dining &amp; Experience</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="offers-booking.html">Offers &amp; Booking</a></li>
+            <li><a href="contact.html">Contact &amp; Location</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Room Categories</h4>
+          <ul class="footer-links">
+            <li><a href="rooms.html">Standard Room (₹1,499)</a></li>
+            <li><a href="rooms.html">Deluxe Room (₹2,199)</a></li>
+            <li><a href="rooms.html">Family Room (₹2,999)</a></li>
+            <li><a href="rooms.html">Business Traveller Room (₹2,499)</a></li>
+            <li><a href="offers-booking.html">Special Stay Offers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Sample Hotel Contact</h4>
+          <div class="footer-contact-item">
+            <span class="icon">📍</span>
+            <span>Main Road, Your City, India <span class="demo-tag">Sample</span></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">📞</span>
+            <span>+91 90000 00000 <span class="demo-tag">Demo</span></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">✉️</span>
+            <span>demo@example.com <span class="demo-tag">Demo</span></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">⏰</span>
+            <span>Check-in: 12:00 PM | Check-out: 11:00 AM</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">🛎️</span>
+            <span>Front Desk: 24 Hours Open (Sample Info)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year"></span> BUDGET HOTEL. All rights reserved.
+        </div>
+        <div class="footer-bottom-notice">
+          Demonstration Website • All prices and details are sample representations.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
